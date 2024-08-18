@@ -50,7 +50,6 @@ Please extract the downloaded compressed file to the ./datasets folder and keep 
 ```
 ├─ AMC_nets
 ├─ datasets
-    ├── AMC_nets
     ├── GOLD_XYZ_OSC.0001_1024.hdf5
     ├── RML2016.10a_dict.pkl
     ├── RML2016.10b.dat
