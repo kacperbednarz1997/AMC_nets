@@ -1,0 +1,548 @@
+[2024-07-31 23:05:06,057] ====================
+[2024-07-31 23:05:06,058] dataset : 2016.10a
+[2024-07-31 23:05:06,058] model_name : CNN_Pijackova
+[2024-07-31 23:05:06,058] yaml : 2016.10a_CNN_Pijackova
+[2024-07-31 23:05:06,058] base_dir : training
+[2024-07-31 23:05:06,058] epochs : 100
+[2024-07-31 23:05:06,058] batch_size : 128
+[2024-07-31 23:05:06,058] patience : 10
+[2024-07-31 23:05:06,058] milestone_step : 3
+[2024-07-31 23:05:06,058] gamma : 0.5
+[2024-07-31 23:05:06,058] lr : 0.0007
+[2024-07-31 23:05:06,058] optim_flag : Adam
+[2024-07-31 23:05:06,058] num_classes : 11
+[2024-07-31 23:05:06,058] num_level : 1
+[2024-07-31 23:05:06,058] regu_details : 0.01
+[2024-07-31 23:05:06,058] regu_approx : 0.01
+[2024-07-31 23:05:06,058] kernel_size : 3
+[2024-07-31 23:05:06,058] in_channels : 64
+[2024-07-31 23:05:06,058] latent_dim : 320
+[2024-07-31 23:05:06,058] monitor : acc
+[2024-07-31 23:05:06,058] test_batch_size : 64
+[2024-07-31 23:05:06,058] classes : {b'QAM16': 0, b'QAM64': 1, b'8PSK': 2, b'WBFM': 3, b'BPSK': 4, b'CPFSK': 5, b'AM-DSB': 6, b'GFSK': 7, b'PAM4': 8, b'QPSK': 9, b'AM-SSB': 10}
+[2024-07-31 23:05:06,058] cfg_dir : training/2016.10a_0
+[2024-07-31 23:05:06,058] model_dir : training/2016.10a_0/models
+[2024-07-31 23:05:06,058] log_dir : training/2016.10a_0/log
+[2024-07-31 23:05:06,058] result_dir : training/2016.10a_0/result
+[2024-07-31 23:05:06,058] mode : train
+[2024-07-31 23:05:06,058] seed : 2022
+[2024-07-31 23:05:06,058] device : cuda
+[2024-07-31 23:05:06,058] ckpt_path : ./checkpoint
+[2024-07-31 23:05:06,058] num_workers : 0
+[2024-07-31 23:05:06,058] Draw_Confmat : True
+[2024-07-31 23:05:06,058] Draw_Acc_Curve : True
+[2024-07-31 23:05:06,058] ====================
+[2024-07-31 23:05:06,125] >>> total params: 0.10M
+[2024-07-31 23:05:07,518] ********************
+[2024-07-31 23:05:07,518] Signals.shape: [220000, 2, 128]
+[2024-07-31 23:05:07,518] Labels.shape: [220000]
+[2024-07-31 23:05:07,518] ********************
+[2024-07-31 23:05:07,588] Signal_train.shape: [132000, 2, 128]
+[2024-07-31 23:05:07,588] Signal_val.shape: [44000, 2, 128]
+[2024-07-31 23:05:07,588] Signal_test.shape: [44000, 2, 128]
+[2024-07-31 23:05:07,588] ********************
+[2024-07-31 23:05:07,588] train_loader batch: 1032
+[2024-07-31 23:05:07,588] val_loader batch: 344
+[2024-07-31 23:05:08,028] Starting training epoch 0:
+[2024-07-31 23:05:09,925] ====> Epoch: 0 Time: 1.90 Train Loss: 2.3537787633348803 Train acc: 0.15176841085271317 lr: 0.00070
+[2024-07-31 23:05:09,925] Starting validation epoch 0:
+[2024-07-31 23:05:10,192] ====> Epoch: 0 Time: 0.27 Val Loss: 2.2779923719029096 Val acc: 0.2501211240310078
+[2024-07-31 23:05:10,193] Validation loss decreased (inf --> 2.277992).
+[2024-07-31 23:05:10,194] Starting training epoch 1:
+[2024-07-31 23:05:11,866] ====> Epoch: 1 Time: 1.67 Train Loss: 2.267690107803936 Train acc: 0.2643229166666667 lr: 0.00070
+[2024-07-31 23:05:11,866] Starting validation epoch 1:
+[2024-07-31 23:05:12,135] ====> Epoch: 1 Time: 0.27 Val Loss: 2.2521695605544156 Val acc: 0.28249152131782945
+[2024-07-31 23:05:12,136] Validation loss decreased (2.277992 --> 2.252170).
+[2024-07-31 23:05:12,136] Starting training epoch 2:
+[2024-07-31 23:05:13,804] ====> Epoch: 2 Time: 1.67 Train Loss: 2.2212507345879726 Train acc: 0.31402919089147285 lr: 0.00070
+[2024-07-31 23:05:13,804] Starting validation epoch 2:
+[2024-07-31 23:05:14,074] ====> Epoch: 2 Time: 0.27 Val Loss: 2.2058910914631777 Val acc: 0.3286473473837209
+[2024-07-31 23:05:14,076] Validation loss decreased (2.252170 --> 2.205891).
+[2024-07-31 23:05:14,076] Starting training epoch 3:
+[2024-07-31 23:05:15,740] ====> Epoch: 3 Time: 1.66 Train Loss: 2.2032318870688594 Train acc: 0.33128179505813954 lr: 0.00070
+[2024-07-31 23:05:15,740] Starting validation epoch 3:
+[2024-07-31 23:05:16,013] ====> Epoch: 3 Time: 0.27 Val Loss: 2.1908944055091504 Val acc: 0.34621033187984496
+[2024-07-31 23:05:16,014] Validation loss decreased (2.205891 --> 2.190894).
+[2024-07-31 23:05:16,014] Starting training epoch 4:
+[2024-07-31 23:05:17,676] ====> Epoch: 4 Time: 1.66 Train Loss: 2.190547137297401 Train acc: 0.3439619670542636 lr: 0.00070
+[2024-07-31 23:05:17,677] Starting validation epoch 4:
+[2024-07-31 23:05:17,949] ====> Epoch: 4 Time: 0.27 Val Loss: 2.179223905469096 Val acc: 0.3525390625
+[2024-07-31 23:05:17,951] Validation loss decreased (2.190894 --> 2.179224).
+[2024-07-31 23:05:17,952] Starting training epoch 5:
+[2024-07-31 23:05:19,618] ====> Epoch: 5 Time: 1.67 Train Loss: 2.179028198238491 Train acc: 0.3566572795542636 lr: 0.00070
+[2024-07-31 23:05:19,619] Starting validation epoch 5:
+[2024-07-31 23:05:19,887] ====> Epoch: 5 Time: 0.27 Val Loss: 2.165134093789167 Val acc: 0.36875454215116277
+[2024-07-31 23:05:19,889] Validation loss decreased (2.179224 --> 2.165134).
+[2024-07-31 23:05:19,889] Starting training epoch 6:
+[2024-07-31 23:05:21,560] ====> Epoch: 6 Time: 1.67 Train Loss: 2.171424776777741 Train acc: 0.36316769622093026 lr: 0.00070
+[2024-07-31 23:05:21,560] Starting validation epoch 6:
+[2024-07-31 23:05:21,824] ====> Epoch: 6 Time: 0.26 Val Loss: 2.158845523069071 Val acc: 0.37610525678294576
+[2024-07-31 23:05:21,825] Validation loss decreased (2.165134 --> 2.158846).
+[2024-07-31 23:05:21,826] Starting training epoch 7:
+[2024-07-31 23:05:23,486] ====> Epoch: 7 Time: 1.66 Train Loss: 2.1660533403010334 Train acc: 0.36798994670542634 lr: 0.00070
+[2024-07-31 23:05:23,487] Starting validation epoch 7:
+[2024-07-31 23:05:23,746] ====> Epoch: 7 Time: 0.26 Val Loss: 2.15387578135313 Val acc: 0.38150284641472865
+[2024-07-31 23:05:23,747] Validation loss decreased (2.158846 --> 2.153876).
+[2024-07-31 23:05:23,747] Starting training epoch 8:
+[2024-07-31 23:05:25,408] ====> Epoch: 8 Time: 1.66 Train Loss: 2.1616066232208135 Train acc: 0.3732437015503876 lr: 0.00070
+[2024-07-31 23:05:25,408] Starting validation epoch 8:
+[2024-07-31 23:05:25,678] ====> Epoch: 8 Time: 0.27 Val Loss: 2.1578187360319983 Val acc: 0.37456849563953487
+[2024-07-31 23:05:25,678] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:05:25,679] Starting training epoch 9:
+[2024-07-31 23:05:27,333] ====> Epoch: 9 Time: 1.65 Train Loss: 2.1592514452546143 Train acc: 0.37493943798449614 lr: 0.00070
+[2024-07-31 23:05:27,334] Starting validation epoch 9:
+[2024-07-31 23:05:27,606] ====> Epoch: 9 Time: 0.27 Val Loss: 2.1561791723550754 Val acc: 0.3763777858527132
+[2024-07-31 23:05:27,606] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:05:27,607] Starting training epoch 10:
+[2024-07-31 23:05:29,271] ====> Epoch: 10 Time: 1.66 Train Loss: 2.1563374367795247 Train acc: 0.3788078367248062 lr: 0.00070
+[2024-07-31 23:05:29,271] Starting validation epoch 10:
+[2024-07-31 23:05:29,532] ====> Epoch: 10 Time: 0.26 Val Loss: 2.1441918680834218 Val acc: 0.3897241400193798
+[2024-07-31 23:05:29,533] Validation loss decreased (2.153876 --> 2.144192).
+[2024-07-31 23:05:29,533] Starting training epoch 11:
+[2024-07-31 23:05:31,190] ====> Epoch: 11 Time: 1.66 Train Loss: 2.1545577705368517 Train acc: 0.379890382751938 lr: 0.00070
+[2024-07-31 23:05:31,190] Starting validation epoch 11:
+[2024-07-31 23:05:31,455] ====> Epoch: 11 Time: 0.27 Val Loss: 2.1469136192355047 Val acc: 0.3877483042635659
+[2024-07-31 23:05:31,455] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:05:31,455] Starting training epoch 12:
+[2024-07-31 23:05:33,115] ====> Epoch: 12 Time: 1.66 Train Loss: 2.1526726814665538 Train acc: 0.381828367248062 lr: 0.00070
+[2024-07-31 23:05:33,115] Starting validation epoch 12:
+[2024-07-31 23:05:33,380] ====> Epoch: 12 Time: 0.26 Val Loss: 2.1513759278973867 Val acc: 0.3802386143410853
+[2024-07-31 23:05:33,380] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:05:33,380] Starting training epoch 13:
+[2024-07-31 23:05:35,034] ====> Epoch: 13 Time: 1.65 Train Loss: 2.1492654591105707 Train acc: 0.38606013808139533 lr: 0.00070
+[2024-07-31 23:05:35,034] Starting validation epoch 13:
+[2024-07-31 23:05:35,300] ====> Epoch: 13 Time: 0.27 Val Loss: 2.1420131755429646 Val acc: 0.39264625726744184
+[2024-07-31 23:05:35,301] Validation loss decreased (2.144192 --> 2.142013).
+[2024-07-31 23:05:35,302] Starting training epoch 14:
+[2024-07-31 23:05:36,950] ====> Epoch: 14 Time: 1.65 Train Loss: 2.148008183337921 Train acc: 0.38727894864341084 lr: 0.00070
+[2024-07-31 23:05:36,951] Starting validation epoch 14:
+[2024-07-31 23:05:37,217] ====> Epoch: 14 Time: 0.27 Val Loss: 2.1377691314663996 Val acc: 0.39804384689922484
+[2024-07-31 23:05:37,218] Validation loss decreased (2.142013 --> 2.137769).
+[2024-07-31 23:05:37,219] Starting training epoch 15:
+[2024-07-31 23:05:38,861] ====> Epoch: 15 Time: 1.64 Train Loss: 2.14531823946524 Train acc: 0.3907007025193798 lr: 0.00070
+[2024-07-31 23:05:38,862] Starting validation epoch 15:
+[2024-07-31 23:05:39,134] ====> Epoch: 15 Time: 0.27 Val Loss: 2.13893562070159 Val acc: 0.3965903585271318
+[2024-07-31 23:05:39,134] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:05:39,134] Starting training epoch 16:
+[2024-07-31 23:05:40,787] ====> Epoch: 16 Time: 1.65 Train Loss: 2.1387247427027356 Train acc: 0.39773346656976744 lr: 0.00070
+[2024-07-31 23:05:40,787] Starting validation epoch 16:
+[2024-07-31 23:05:41,049] ====> Epoch: 16 Time: 0.26 Val Loss: 2.1245491969030956 Val acc: 0.41199582122093026
+[2024-07-31 23:05:41,050] Validation loss decreased (2.137769 --> 2.124549).
+[2024-07-31 23:05:41,051] Starting training epoch 17:
+[2024-07-31 23:05:42,713] ====> Epoch: 17 Time: 1.66 Train Loss: 2.1333888577398405 Train acc: 0.4032370397286822 lr: 0.00070
+[2024-07-31 23:05:42,713] Starting validation epoch 17:
+[2024-07-31 23:05:42,982] ====> Epoch: 17 Time: 0.27 Val Loss: 2.1190304867056913 Val acc: 0.41968719718992253
+[2024-07-31 23:05:42,989] Validation loss decreased (2.124549 --> 2.119030).
+[2024-07-31 23:05:42,989] Starting training epoch 18:
+[2024-07-31 23:05:44,648] ====> Epoch: 18 Time: 1.66 Train Loss: 2.1298897872830547 Train acc: 0.40610616521317827 lr: 0.00070
+[2024-07-31 23:05:44,649] Starting validation epoch 18:
+[2024-07-31 23:05:44,917] ====> Epoch: 18 Time: 0.27 Val Loss: 2.1193070876043896 Val acc: 0.4168483527131783
+[2024-07-31 23:05:44,917] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:05:44,918] Starting training epoch 19:
+[2024-07-31 23:05:46,571] ====> Epoch: 19 Time: 1.65 Train Loss: 2.1264438654563222 Train acc: 0.4106861676356589 lr: 0.00070
+[2024-07-31 23:05:46,571] Starting validation epoch 19:
+[2024-07-31 23:05:46,834] ====> Epoch: 19 Time: 0.26 Val Loss: 2.1143018346886304 Val acc: 0.42288184350775193
+[2024-07-31 23:05:46,835] Validation loss decreased (2.119030 --> 2.114302).
+[2024-07-31 23:05:46,835] Starting training epoch 20:
+[2024-07-31 23:05:48,489] ====> Epoch: 20 Time: 1.65 Train Loss: 2.1217285894839337 Train acc: 0.415515988372093 lr: 0.00070
+[2024-07-31 23:05:48,489] Starting validation epoch 20:
+[2024-07-31 23:05:48,757] ====> Epoch: 20 Time: 0.27 Val Loss: 2.110706452020379 Val acc: 0.42706062257751937
+[2024-07-31 23:05:48,758] Validation loss decreased (2.114302 --> 2.110706).
+[2024-07-31 23:05:48,758] Starting training epoch 21:
+[2024-07-31 23:05:50,415] ====> Epoch: 21 Time: 1.66 Train Loss: 2.1163142785545466 Train acc: 0.4210195615310077 lr: 0.00070
+[2024-07-31 23:05:50,415] Starting validation epoch 21:
+[2024-07-31 23:05:50,683] ====> Epoch: 21 Time: 0.27 Val Loss: 2.1021361493094024 Val acc: 0.4368186773255814
+[2024-07-31 23:05:50,684] Validation loss decreased (2.110706 --> 2.102136).
+[2024-07-31 23:05:50,684] Starting training epoch 22:
+[2024-07-31 23:05:52,338] ====> Epoch: 22 Time: 1.65 Train Loss: 2.110177525254183 Train acc: 0.4289153343023256 lr: 0.00070
+[2024-07-31 23:05:52,338] Starting validation epoch 22:
+[2024-07-31 23:05:52,611] ====> Epoch: 22 Time: 0.27 Val Loss: 2.0929371853207432 Val acc: 0.44642532703488375
+[2024-07-31 23:05:52,612] Validation loss decreased (2.102136 --> 2.092937).
+[2024-07-31 23:05:52,612] Starting training epoch 23:
+[2024-07-31 23:05:54,266] ====> Epoch: 23 Time: 1.65 Train Loss: 2.1041392027869703 Train acc: 0.4344189074612403 lr: 0.00070
+[2024-07-31 23:05:54,266] Starting validation epoch 23:
+[2024-07-31 23:05:54,532] ====> Epoch: 23 Time: 0.27 Val Loss: 2.087118024396342 Val acc: 0.45386688468992253
+[2024-07-31 23:05:54,533] Validation loss decreased (2.092937 --> 2.087118).
+[2024-07-31 23:05:54,534] Starting training epoch 24:
+[2024-07-31 23:05:56,194] ====> Epoch: 24 Time: 1.66 Train Loss: 2.1003844294437144 Train acc: 0.4390443313953488 lr: 0.00070
+[2024-07-31 23:05:56,195] Starting validation epoch 24:
+[2024-07-31 23:05:56,456] ====> Epoch: 24 Time: 0.26 Val Loss: 2.084445474106212 Val acc: 0.45598655523255816
+[2024-07-31 23:05:56,457] Validation loss decreased (2.087118 --> 2.084445).
+[2024-07-31 23:05:56,457] Starting training epoch 25:
+[2024-07-31 23:05:58,102] ====> Epoch: 25 Time: 1.65 Train Loss: 2.0966877777909123 Train acc: 0.4436848958333333 lr: 0.00070
+[2024-07-31 23:05:58,102] Starting validation epoch 25:
+[2024-07-31 23:05:58,370] ====> Epoch: 25 Time: 0.27 Val Loss: 2.0804477001345436 Val acc: 0.4585377301356589
+[2024-07-31 23:05:58,371] Validation loss decreased (2.084445 --> 2.080448).
+[2024-07-31 23:05:58,371] Starting training epoch 26:
+[2024-07-31 23:06:00,029] ====> Epoch: 26 Time: 1.66 Train Loss: 2.0929929813904358 Train acc: 0.4474170300387597 lr: 0.00070
+[2024-07-31 23:06:00,030] Starting validation epoch 26:
+[2024-07-31 23:06:00,296] ====> Epoch: 26 Time: 0.27 Val Loss: 2.0784022575894068 Val acc: 0.4608466569767442
+[2024-07-31 23:06:00,298] Validation loss decreased (2.080448 --> 2.078402).
+[2024-07-31 23:06:00,299] Starting training epoch 27:
+[2024-07-31 23:06:01,960] ====> Epoch: 27 Time: 1.66 Train Loss: 2.090956460713416 Train acc: 0.44915061773255816 lr: 0.00070
+[2024-07-31 23:06:01,961] Starting validation epoch 27:
+[2024-07-31 23:06:02,229] ====> Epoch: 27 Time: 0.27 Val Loss: 2.0729318791350653 Val acc: 0.4676674539728682
+[2024-07-31 23:06:02,230] Validation loss decreased (2.078402 --> 2.072932).
+[2024-07-31 23:06:02,230] Starting training epoch 28:
+[2024-07-31 23:06:03,892] ====> Epoch: 28 Time: 1.66 Train Loss: 2.0882804550865823 Train acc: 0.45119458575581395 lr: 0.00070
+[2024-07-31 23:06:03,892] Starting validation epoch 28:
+[2024-07-31 23:06:04,161] ====> Epoch: 28 Time: 0.27 Val Loss: 2.07474208848421 Val acc: 0.46435925387596905
+[2024-07-31 23:06:04,161] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:06:04,161] Starting training epoch 29:
+[2024-07-31 23:06:05,817] ====> Epoch: 29 Time: 1.66 Train Loss: 2.0854584702918695 Train acc: 0.4540258599806202 lr: 0.00070
+[2024-07-31 23:06:05,817] Starting validation epoch 29:
+[2024-07-31 23:06:06,083] ====> Epoch: 29 Time: 0.27 Val Loss: 2.067745263839877 Val acc: 0.4714828609496124
+[2024-07-31 23:06:06,084] Validation loss decreased (2.072932 --> 2.067745).
+[2024-07-31 23:06:06,085] Starting training epoch 30:
+[2024-07-31 23:06:07,740] ====> Epoch: 30 Time: 1.66 Train Loss: 2.081969768964043 Train acc: 0.4582046390503876 lr: 0.00070
+[2024-07-31 23:06:07,740] Starting validation epoch 30:
+[2024-07-31 23:06:08,011] ====> Epoch: 30 Time: 0.27 Val Loss: 2.0635398723358334 Val acc: 0.47681988856589147
+[2024-07-31 23:06:08,014] Validation loss decreased (2.067745 --> 2.063540).
+[2024-07-31 23:06:08,014] Starting training epoch 31:
+[2024-07-31 23:06:09,683] ====> Epoch: 31 Time: 1.67 Train Loss: 2.0800834698963535 Train acc: 0.45965055717054265 lr: 0.00070
+[2024-07-31 23:06:09,683] Starting validation epoch 31:
+[2024-07-31 23:06:09,953] ====> Epoch: 31 Time: 0.27 Val Loss: 2.0583207503307697 Val acc: 0.4816118580426356
+[2024-07-31 23:06:09,955] Validation loss decreased (2.063540 --> 2.058321).
+[2024-07-31 23:06:09,955] Starting training epoch 32:
+[2024-07-31 23:06:11,615] ====> Epoch: 32 Time: 1.66 Train Loss: 2.0752157835766325 Train acc: 0.46470748546511625 lr: 0.00070
+[2024-07-31 23:06:11,615] Starting validation epoch 32:
+[2024-07-31 23:06:11,878] ====> Epoch: 32 Time: 0.26 Val Loss: 2.0596153129671895 Val acc: 0.4812787669573644
+[2024-07-31 23:06:11,878] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:06:11,878] Starting training epoch 33:
+[2024-07-31 23:06:13,552] ====> Epoch: 33 Time: 1.67 Train Loss: 2.0660662115082262 Train acc: 0.47409459786821706 lr: 0.00070
+[2024-07-31 23:06:13,552] Starting validation epoch 33:
+[2024-07-31 23:06:13,818] ====> Epoch: 33 Time: 0.27 Val Loss: 2.0418469995953314 Val acc: 0.4978878997093023
+[2024-07-31 23:06:13,820] Validation loss decreased (2.058321 --> 2.041847).
+[2024-07-31 23:06:13,820] Starting training epoch 34:
+[2024-07-31 23:06:15,474] ====> Epoch: 34 Time: 1.65 Train Loss: 2.0595469680405403 Train acc: 0.48101380813953487 lr: 0.00070
+[2024-07-31 23:06:15,474] Starting validation epoch 34:
+[2024-07-31 23:06:15,746] ====> Epoch: 34 Time: 0.27 Val Loss: 2.037782361687616 Val acc: 0.5022029433139535
+[2024-07-31 23:06:15,747] Validation loss decreased (2.041847 --> 2.037782).
+[2024-07-31 23:06:15,748] Starting training epoch 35:
+[2024-07-31 23:06:17,443] ====> Epoch: 35 Time: 1.70 Train Loss: 2.057505761699159 Train acc: 0.4828306686046512 lr: 0.00070
+[2024-07-31 23:06:17,443] Starting validation epoch 35:
+[2024-07-31 23:06:17,722] ====> Epoch: 35 Time: 0.28 Val Loss: 2.041070204834605 Val acc: 0.49915970203488375
+[2024-07-31 23:06:17,722] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:06:17,722] Starting training epoch 36:
+[2024-07-31 23:06:19,407] ====> Epoch: 36 Time: 1.68 Train Loss: 2.056499027813128 Train acc: 0.48357255329457366 lr: 0.00070
+[2024-07-31 23:06:19,407] Starting validation epoch 36:
+[2024-07-31 23:06:19,673] ====> Epoch: 36 Time: 0.27 Val Loss: 2.032101083286973 Val acc: 0.5089707485465116
+[2024-07-31 23:06:19,674] Validation loss decreased (2.037782 --> 2.032101).
+[2024-07-31 23:06:19,674] Starting training epoch 37:
+[2024-07-31 23:06:21,344] ====> Epoch: 37 Time: 1.67 Train Loss: 2.0531879486732705 Train acc: 0.4868656128875969 lr: 0.00070
+[2024-07-31 23:06:21,344] Starting validation epoch 37:
+[2024-07-31 23:06:21,613] ====> Epoch: 37 Time: 0.27 Val Loss: 2.0367742797663047 Val acc: 0.5033536216085271
+[2024-07-31 23:06:21,614] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:06:21,614] Starting training epoch 38:
+[2024-07-31 23:06:23,306] ====> Epoch: 38 Time: 1.69 Train Loss: 2.052840790198755 Train acc: 0.4875393653100775 lr: 0.00070
+[2024-07-31 23:06:23,307] Starting validation epoch 38:
+[2024-07-31 23:06:23,578] ====> Epoch: 38 Time: 0.27 Val Loss: 2.0322208886229713 Val acc: 0.5081380208333333
+[2024-07-31 23:06:23,578] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:06:23,578] Starting training epoch 39:
+[2024-07-31 23:06:25,259] ====> Epoch: 39 Time: 1.68 Train Loss: 2.0512673698885497 Train acc: 0.48871275436046513 lr: 0.00070
+[2024-07-31 23:06:25,259] Starting validation epoch 39:
+[2024-07-31 23:06:25,532] ====> Epoch: 39 Time: 0.27 Val Loss: 2.0351750358592633 Val acc: 0.5044891593992248
+[2024-07-31 23:06:25,532] EarlyStopping counter: 3 out of 10
+[2024-07-31 23:06:25,533] Starting training epoch 40:
+[2024-07-31 23:06:27,208] ====> Epoch: 40 Time: 1.68 Train Loss: 2.0456293307302533 Train acc: 0.4947765261627907 lr: 0.00035
+[2024-07-31 23:06:27,208] Starting validation epoch 40:
+[2024-07-31 23:06:27,478] ====> Epoch: 40 Time: 0.27 Val Loss: 2.02824128124603 Val acc: 0.5126574612403101
+[2024-07-31 23:06:27,480] Validation loss decreased (2.032101 --> 2.028241).
+[2024-07-31 23:06:27,481] Starting training epoch 41:
+[2024-07-31 23:06:29,166] ====> Epoch: 41 Time: 1.69 Train Loss: 2.045043489036634 Train acc: 0.49485979893410853 lr: 0.00035
+[2024-07-31 23:06:29,166] Starting validation epoch 41:
+[2024-07-31 23:06:29,434] ====> Epoch: 41 Time: 0.27 Val Loss: 2.029194417734479 Val acc: 0.5108708817829458
+[2024-07-31 23:06:29,434] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:06:29,434] Starting training epoch 42:
+[2024-07-31 23:06:31,125] ====> Epoch: 42 Time: 1.69 Train Loss: 2.0440177432326383 Train acc: 0.49612403100775193 lr: 0.00035
+[2024-07-31 23:06:31,126] Starting validation epoch 42:
+[2024-07-31 23:06:31,390] ====> Epoch: 42 Time: 0.26 Val Loss: 2.0298005848429925 Val acc: 0.5107800387596899
+[2024-07-31 23:06:31,390] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:06:31,390] Starting training epoch 43:
+[2024-07-31 23:06:33,068] ====> Epoch: 43 Time: 1.68 Train Loss: 2.0431027172147767 Train acc: 0.4969870397286822 lr: 0.00035
+[2024-07-31 23:06:33,068] Starting validation epoch 43:
+[2024-07-31 23:06:33,342] ====> Epoch: 43 Time: 0.27 Val Loss: 2.028061338635378 Val acc: 0.5123319404069767
+[2024-07-31 23:06:33,342] Validation loss decreased (2.028241 --> 2.028061).
+[2024-07-31 23:06:33,343] Starting training epoch 44:
+[2024-07-31 23:06:35,019] ====> Epoch: 44 Time: 1.68 Train Loss: 2.0429488913726437 Train acc: 0.4971233042635659 lr: 0.00035
+[2024-07-31 23:06:35,019] Starting validation epoch 44:
+[2024-07-31 23:06:35,286] ====> Epoch: 44 Time: 0.27 Val Loss: 2.0252671234829482 Val acc: 0.5160565043604651
+[2024-07-31 23:06:35,287] Validation loss decreased (2.028061 --> 2.025267).
+[2024-07-31 23:06:35,287] Starting training epoch 45:
+[2024-07-31 23:06:36,966] ====> Epoch: 45 Time: 1.68 Train Loss: 2.0423959684233335 Train acc: 0.4982891230620155 lr: 0.00035
+[2024-07-31 23:06:36,967] Starting validation epoch 45:
+[2024-07-31 23:06:37,243] ====> Epoch: 45 Time: 0.28 Val Loss: 2.02504340853802 Val acc: 0.5155265867248062
+[2024-07-31 23:06:37,243] Validation loss decreased (2.025267 --> 2.025043).
+[2024-07-31 23:06:37,243] Starting training epoch 46:
+[2024-07-31 23:06:38,943] ====> Epoch: 46 Time: 1.70 Train Loss: 2.0417412945697473 Train acc: 0.4989401647286822 lr: 0.00035
+[2024-07-31 23:06:38,943] Starting validation epoch 46:
+[2024-07-31 23:06:39,206] ====> Epoch: 46 Time: 0.26 Val Loss: 2.0249488145806067 Val acc: 0.5140806686046512
+[2024-07-31 23:06:39,206] Validation loss decreased (2.025043 --> 2.024949).
+[2024-07-31 23:06:39,207] Starting training epoch 47:
+[2024-07-31 23:06:40,874] ====> Epoch: 47 Time: 1.67 Train Loss: 2.04127883356671 Train acc: 0.4994322311046512 lr: 0.00035
+[2024-07-31 23:06:40,875] Starting validation epoch 47:
+[2024-07-31 23:06:41,142] ====> Epoch: 47 Time: 0.27 Val Loss: 2.0267444401979446 Val acc: 0.5126196099806202
+[2024-07-31 23:06:41,142] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:06:41,142] Starting training epoch 48:
+[2024-07-31 23:06:42,823] ====> Epoch: 48 Time: 1.68 Train Loss: 2.0396096373713295 Train acc: 0.5011128270348837 lr: 0.00035
+[2024-07-31 23:06:42,823] Starting validation epoch 48:
+[2024-07-31 23:06:43,091] ====> Epoch: 48 Time: 0.27 Val Loss: 2.024717150732528 Val acc: 0.5155947189922481
+[2024-07-31 23:06:43,091] Validation loss decreased (2.024949 --> 2.024717).
+[2024-07-31 23:06:43,092] Starting training epoch 49:
+[2024-07-31 23:06:44,781] ====> Epoch: 49 Time: 1.69 Train Loss: 2.0406706970791486 Train acc: 0.4992278343023256 lr: 0.00035
+[2024-07-31 23:06:44,782] Starting validation epoch 49:
+[2024-07-31 23:06:45,050] ====> Epoch: 49 Time: 0.27 Val Loss: 2.0221483135639233 Val acc: 0.5190013323643411
+[2024-07-31 23:06:45,051] Validation loss decreased (2.024717 --> 2.022148).
+[2024-07-31 23:06:45,052] Starting training epoch 50:
+[2024-07-31 23:06:46,749] ====> Epoch: 50 Time: 1.70 Train Loss: 2.0396380594303443 Train acc: 0.5007494549418605 lr: 0.00035
+[2024-07-31 23:06:46,749] Starting validation epoch 50:
+[2024-07-31 23:06:47,021] ====> Epoch: 50 Time: 0.27 Val Loss: 2.0245579245478607 Val acc: 0.5152843386627907
+[2024-07-31 23:06:47,021] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:06:47,021] Starting training epoch 51:
+[2024-07-31 23:06:48,725] ====> Epoch: 51 Time: 1.70 Train Loss: 2.039275265017221 Train acc: 0.5016048934108527 lr: 0.00035
+[2024-07-31 23:06:48,725] Starting validation epoch 51:
+[2024-07-31 23:06:48,993] ====> Epoch: 51 Time: 0.27 Val Loss: 2.0248461961746216 Val acc: 0.5151102228682171
+[2024-07-31 23:06:48,994] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:06:48,994] Starting training epoch 52:
+[2024-07-31 23:06:50,684] ====> Epoch: 52 Time: 1.69 Train Loss: 2.038990247965783 Train acc: 0.500968992248062 lr: 0.00035
+[2024-07-31 23:06:50,685] Starting validation epoch 52:
+[2024-07-31 23:06:50,960] ====> Epoch: 52 Time: 0.27 Val Loss: 2.02220255101836 Val acc: 0.5176841085271318
+[2024-07-31 23:06:50,960] EarlyStopping counter: 3 out of 10
+[2024-07-31 23:06:50,960] Starting training epoch 53:
+[2024-07-31 23:06:52,657] ====> Epoch: 53 Time: 1.70 Train Loss: 2.0364591799272125 Train acc: 0.5035353076550387 lr: 0.00017
+[2024-07-31 23:06:52,658] Starting validation epoch 53:
+[2024-07-31 23:06:52,928] ====> Epoch: 53 Time: 0.27 Val Loss: 2.023101643420929 Val acc: 0.516578851744186
+[2024-07-31 23:06:52,928] EarlyStopping counter: 4 out of 10
+[2024-07-31 23:06:52,928] Starting training epoch 54:
+[2024-07-31 23:06:54,628] ====> Epoch: 54 Time: 1.70 Train Loss: 2.036834032498589 Train acc: 0.5036488614341085 lr: 0.00017
+[2024-07-31 23:06:54,628] Starting validation epoch 54:
+[2024-07-31 23:06:54,903] ====> Epoch: 54 Time: 0.28 Val Loss: 2.0217168448969374 Val acc: 0.5183957122093024
+[2024-07-31 23:06:54,904] Validation loss decreased (2.022148 --> 2.021717).
+[2024-07-31 23:06:54,904] Starting training epoch 55:
+[2024-07-31 23:06:56,596] ====> Epoch: 55 Time: 1.69 Train Loss: 2.037137570538262 Train acc: 0.503406613372093 lr: 0.00017
+[2024-07-31 23:06:56,596] Starting validation epoch 55:
+[2024-07-31 23:06:56,868] ====> Epoch: 55 Time: 0.27 Val Loss: 2.0215119185835815 Val acc: 0.5181988856589147
+[2024-07-31 23:06:56,868] Validation loss decreased (2.021717 --> 2.021512).
+[2024-07-31 23:06:56,869] Starting training epoch 56:
+[2024-07-31 23:06:58,554] ====> Epoch: 56 Time: 1.69 Train Loss: 2.0356570924668347 Train acc: 0.5050417877906976 lr: 0.00017
+[2024-07-31 23:06:58,554] Starting validation epoch 56:
+[2024-07-31 23:06:58,830] ====> Epoch: 56 Time: 0.28 Val Loss: 2.021764271134554 Val acc: 0.5174872819767442
+[2024-07-31 23:06:58,830] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:06:58,831] Starting training epoch 57:
+[2024-07-31 23:07:00,519] ====> Epoch: 57 Time: 1.69 Train Loss: 2.0350952068733617 Train acc: 0.5055187136627907 lr: 0.00017
+[2024-07-31 23:07:00,519] Starting validation epoch 57:
+[2024-07-31 23:07:00,786] ====> Epoch: 57 Time: 0.27 Val Loss: 2.0221281290747397 Val acc: 0.5179944888565892
+[2024-07-31 23:07:00,786] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:07:00,786] Starting training epoch 58:
+[2024-07-31 23:07:02,478] ====> Epoch: 58 Time: 1.69 Train Loss: 2.035002501435982 Train acc: 0.505352168120155 lr: 0.00017
+[2024-07-31 23:07:02,479] Starting validation epoch 58:
+[2024-07-31 23:07:02,745] ====> Epoch: 58 Time: 0.27 Val Loss: 2.023045837879181 Val acc: 0.5175251332364341
+[2024-07-31 23:07:02,745] EarlyStopping counter: 3 out of 10
+[2024-07-31 23:07:02,745] Starting training epoch 59:
+[2024-07-31 23:07:04,405] ====> Epoch: 59 Time: 1.66 Train Loss: 2.034634202487709 Train acc: 0.5062908793604651 lr: 0.00009
+[2024-07-31 23:07:04,405] Starting validation epoch 59:
+[2024-07-31 23:07:04,667] ====> Epoch: 59 Time: 0.26 Val Loss: 2.0200611803420756 Val acc: 0.5200460271317829
+[2024-07-31 23:07:04,668] Validation loss decreased (2.021512 --> 2.020061).
+[2024-07-31 23:07:04,669] Starting training epoch 60:
+[2024-07-31 23:07:06,373] ====> Epoch: 60 Time: 1.70 Train Loss: 2.034315820927768 Train acc: 0.5061243338178295 lr: 0.00009
+[2024-07-31 23:07:06,374] Starting validation epoch 60:
+[2024-07-31 23:07:06,642] ====> Epoch: 60 Time: 0.27 Val Loss: 2.0205787073734194 Val acc: 0.5191754481589147
+[2024-07-31 23:07:06,642] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:07:06,643] Starting training epoch 61:
+[2024-07-31 23:07:08,335] ====> Epoch: 61 Time: 1.69 Train Loss: 2.0338927901299426 Train acc: 0.5064498546511628 lr: 0.00009
+[2024-07-31 23:07:08,336] Starting validation epoch 61:
+[2024-07-31 23:07:08,602] ====> Epoch: 61 Time: 0.27 Val Loss: 2.0198174600684364 Val acc: 0.5203034156976745
+[2024-07-31 23:07:08,603] Validation loss decreased (2.020061 --> 2.019817).
+[2024-07-31 23:07:08,603] Starting training epoch 62:
+[2024-07-31 23:07:10,283] ====> Epoch: 62 Time: 1.68 Train Loss: 2.033727537060893 Train acc: 0.5061546148255814 lr: 0.00009
+[2024-07-31 23:07:10,284] Starting validation epoch 62:
+[2024-07-31 23:07:10,554] ====> Epoch: 62 Time: 0.27 Val Loss: 2.0202953829321753 Val acc: 0.5199476138565892
+[2024-07-31 23:07:10,555] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:07:10,555] Starting training epoch 63:
+[2024-07-31 23:07:12,258] ====> Epoch: 63 Time: 1.70 Train Loss: 2.0333578042512714 Train acc: 0.5072901526162791 lr: 0.00009
+[2024-07-31 23:07:12,258] Starting validation epoch 63:
+[2024-07-31 23:07:12,527] ====> Epoch: 63 Time: 0.27 Val Loss: 2.0210525549428406 Val acc: 0.5197583575581395
+[2024-07-31 23:07:12,528] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:07:12,528] Starting training epoch 64:
+[2024-07-31 23:07:14,216] ====> Epoch: 64 Time: 1.69 Train Loss: 2.034229034485743 Train acc: 0.5062227470930233 lr: 0.00009
+[2024-07-31 23:07:14,216] Starting validation epoch 64:
+[2024-07-31 23:07:14,488] ====> Epoch: 64 Time: 0.27 Val Loss: 2.019981084867965 Val acc: 0.5196523740310077
+[2024-07-31 23:07:14,488] EarlyStopping counter: 3 out of 10
+[2024-07-31 23:07:14,488] Starting training epoch 65:
+[2024-07-31 23:07:16,180] ====> Epoch: 65 Time: 1.69 Train Loss: 2.0324300734340683 Train acc: 0.5083575581395349 lr: 0.00004
+[2024-07-31 23:07:16,180] Starting validation epoch 65:
+[2024-07-31 23:07:16,448] ====> Epoch: 65 Time: 0.27 Val Loss: 2.020168419494185 Val acc: 0.5191300266472868
+[2024-07-31 23:07:16,448] EarlyStopping counter: 4 out of 10
+[2024-07-31 23:07:16,449] Starting training epoch 66:
+[2024-07-31 23:07:18,142] ====> Epoch: 66 Time: 1.69 Train Loss: 2.0327580784873445 Train acc: 0.5084862524224806 lr: 0.00004
+[2024-07-31 23:07:18,142] Starting validation epoch 66:
+[2024-07-31 23:07:18,414] ====> Epoch: 66 Time: 0.27 Val Loss: 2.019417108144871 Val acc: 0.5213556807170542
+[2024-07-31 23:07:18,415] Validation loss decreased (2.019817 --> 2.019417).
+[2024-07-31 23:07:18,416] Starting training epoch 67:
+[2024-07-31 23:07:20,111] ====> Epoch: 67 Time: 1.70 Train Loss: 2.0329617057428804 Train acc: 0.5075929626937985 lr: 0.00004
+[2024-07-31 23:07:20,112] Starting validation epoch 67:
+[2024-07-31 23:07:20,383] ====> Epoch: 67 Time: 0.27 Val Loss: 2.0194768704647243 Val acc: 0.5208257630813954
+[2024-07-31 23:07:20,383] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:07:20,383] Starting training epoch 68:
+[2024-07-31 23:07:22,065] ====> Epoch: 68 Time: 1.68 Train Loss: 2.0334069854760353 Train acc: 0.5072144500968992 lr: 0.00004
+[2024-07-31 23:07:22,065] Starting validation epoch 68:
+[2024-07-31 23:07:22,336] ====> Epoch: 68 Time: 0.27 Val Loss: 2.019530346920324 Val acc: 0.5209468871124031
+[2024-07-31 23:07:22,336] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:07:22,336] Starting training epoch 69:
+[2024-07-31 23:07:24,047] ====> Epoch: 69 Time: 1.71 Train Loss: 2.0327057300149933 Train acc: 0.5080244670542635 lr: 0.00004
+[2024-07-31 23:07:24,047] Starting validation epoch 69:
+[2024-07-31 23:07:24,322] ====> Epoch: 69 Time: 0.27 Val Loss: 2.0196292975614236 Val acc: 0.5202579941860465
+[2024-07-31 23:07:24,322] EarlyStopping counter: 3 out of 10
+[2024-07-31 23:07:24,322] Starting training epoch 70:
+[2024-07-31 23:07:26,020] ====> Epoch: 70 Time: 1.70 Train Loss: 2.0325198033752367 Train acc: 0.5078730620155039 lr: 0.00002
+[2024-07-31 23:07:26,020] Starting validation epoch 70:
+[2024-07-31 23:07:26,291] ====> Epoch: 70 Time: 0.27 Val Loss: 2.0196505566669063 Val acc: 0.5207349200581395
+[2024-07-31 23:07:26,291] EarlyStopping counter: 4 out of 10
+[2024-07-31 23:07:26,292] Starting training epoch 71:
+[2024-07-31 23:07:27,977] ====> Epoch: 71 Time: 1.69 Train Loss: 2.0330546412819115 Train acc: 0.5079790455426356 lr: 0.00002
+[2024-07-31 23:07:27,977] Starting validation epoch 71:
+[2024-07-31 23:07:28,250] ====> Epoch: 71 Time: 0.27 Val Loss: 2.0193392107653065 Val acc: 0.5210453003875969
+[2024-07-31 23:07:28,250] Validation loss decreased (2.019417 --> 2.019339).
+[2024-07-31 23:07:28,250] Starting training epoch 72:
+[2024-07-31 23:07:29,941] ====> Epoch: 72 Time: 1.69 Train Loss: 2.0326645244923673 Train acc: 0.5084105499031008 lr: 0.00002
+[2024-07-31 23:07:29,941] Starting validation epoch 72:
+[2024-07-31 23:07:30,208] ====> Epoch: 72 Time: 0.27 Val Loss: 2.019539300092431 Val acc: 0.5210453003875969
+[2024-07-31 23:07:30,208] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:07:30,208] Starting training epoch 73:
+[2024-07-31 23:07:31,905] ====> Epoch: 73 Time: 1.70 Train Loss: 2.032895045571549 Train acc: 0.5080017562984496 lr: 0.00002
+[2024-07-31 23:07:31,905] Starting validation epoch 73:
+[2024-07-31 23:07:32,180] ====> Epoch: 73 Time: 0.27 Val Loss: 2.0193239758874095 Val acc: 0.5211815649224807
+[2024-07-31 23:07:32,180] Validation loss decreased (2.019339 --> 2.019324).
+[2024-07-31 23:07:32,180] Starting training epoch 74:
+[2024-07-31 23:07:33,885] ====> Epoch: 74 Time: 1.71 Train Loss: 2.032214636603991 Train acc: 0.5089026162790697 lr: 0.00002
+[2024-07-31 23:07:33,885] Starting validation epoch 74:
+[2024-07-31 23:07:34,151] ====> Epoch: 74 Time: 0.27 Val Loss: 2.0191715480976327 Val acc: 0.5209090358527132
+[2024-07-31 23:07:34,151] Validation loss decreased (2.019324 --> 2.019172).
+[2024-07-31 23:07:34,151] Starting training epoch 75:
+[2024-07-31 23:07:35,827] ====> Epoch: 75 Time: 1.68 Train Loss: 2.0323064738465835 Train acc: 0.508312136627907 lr: 0.00002
+[2024-07-31 23:07:35,828] Starting validation epoch 75:
+[2024-07-31 23:07:36,095] ====> Epoch: 75 Time: 0.27 Val Loss: 2.0194366726764414 Val acc: 0.5206440770348837
+[2024-07-31 23:07:36,095] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:07:36,096] Starting training epoch 76:
+[2024-07-31 23:07:37,754] ====> Epoch: 76 Time: 1.66 Train Loss: 2.0322404960098193 Train acc: 0.5085468144379846 lr: 0.00002
+[2024-07-31 23:07:37,754] Starting validation epoch 76:
+[2024-07-31 23:07:38,018] ====> Epoch: 76 Time: 0.26 Val Loss: 2.0192017392363657 Val acc: 0.5210680111434108
+[2024-07-31 23:07:38,018] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:07:38,019] Starting training epoch 77:
+[2024-07-31 23:07:39,693] ====> Epoch: 77 Time: 1.67 Train Loss: 2.0327198463816973 Train acc: 0.5076686652131783 lr: 0.00002
+[2024-07-31 23:07:39,693] Starting validation epoch 77:
+[2024-07-31 23:07:39,957] ====> Epoch: 77 Time: 0.26 Val Loss: 2.0189855812593946 Val acc: 0.521469234496124
+[2024-07-31 23:07:39,958] Validation loss decreased (2.019172 --> 2.018986).
+[2024-07-31 23:07:39,958] Starting training epoch 78:
+[2024-07-31 23:07:41,645] ====> Epoch: 78 Time: 1.69 Train Loss: 2.0316398535356965 Train acc: 0.5087057897286822 lr: 0.00002
+[2024-07-31 23:07:41,645] Starting validation epoch 78:
+[2024-07-31 23:07:41,911] ====> Epoch: 78 Time: 0.27 Val Loss: 2.0192024596901827 Val acc: 0.5212345566860465
+[2024-07-31 23:07:41,911] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:07:41,911] Starting training epoch 79:
+[2024-07-31 23:07:43,576] ====> Epoch: 79 Time: 1.66 Train Loss: 2.032256938690363 Train acc: 0.5085392441860465 lr: 0.00002
+[2024-07-31 23:07:43,576] Starting validation epoch 79:
+[2024-07-31 23:07:43,842] ====> Epoch: 79 Time: 0.27 Val Loss: 2.0191140316946563 Val acc: 0.5213253997093024
+[2024-07-31 23:07:43,842] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:07:43,842] Starting training epoch 80:
+[2024-07-31 23:07:45,523] ====> Epoch: 80 Time: 1.68 Train Loss: 2.0324711674867673 Train acc: 0.5088950460271318 lr: 0.00002
+[2024-07-31 23:07:45,524] Starting validation epoch 80:
+[2024-07-31 23:07:45,797] ====> Epoch: 80 Time: 0.27 Val Loss: 2.0195326344218363 Val acc: 0.5206743580426356
+[2024-07-31 23:07:45,797] EarlyStopping counter: 3 out of 10
+[2024-07-31 23:07:45,798] Starting training epoch 81:
+[2024-07-31 23:07:47,481] ====> Epoch: 81 Time: 1.68 Train Loss: 2.032165997596674 Train acc: 0.5086982194767442 lr: 0.00001
+[2024-07-31 23:07:47,481] Starting validation epoch 81:
+[2024-07-31 23:07:47,756] ====> Epoch: 81 Time: 0.28 Val Loss: 2.018996673267941 Val acc: 0.5216357800387598
+[2024-07-31 23:07:47,757] EarlyStopping counter: 4 out of 10
+[2024-07-31 23:07:47,757] Starting training epoch 82:
+[2024-07-31 23:07:49,418] ====> Epoch: 82 Time: 1.66 Train Loss: 2.0323566417823464 Train acc: 0.5080017562984496 lr: 0.00001
+[2024-07-31 23:07:49,418] Starting validation epoch 82:
+[2024-07-31 23:07:49,685] ====> Epoch: 82 Time: 0.27 Val Loss: 2.019182870207831 Val acc: 0.5211134326550387
+[2024-07-31 23:07:49,685] EarlyStopping counter: 5 out of 10
+[2024-07-31 23:07:49,685] Starting training epoch 83:
+[2024-07-31 23:07:51,360] ====> Epoch: 83 Time: 1.68 Train Loss: 2.0320604090080705 Train acc: 0.5086603682170543 lr: 0.00001
+[2024-07-31 23:07:51,360] Starting validation epoch 83:
+[2024-07-31 23:07:51,628] ====> Epoch: 83 Time: 0.27 Val Loss: 2.018873061551604 Val acc: 0.5215676477713178
+[2024-07-31 23:07:51,628] Validation loss decreased (2.018986 --> 2.018873).
+[2024-07-31 23:07:51,628] Starting training epoch 84:
+[2024-07-31 23:07:53,300] ====> Epoch: 84 Time: 1.67 Train Loss: 2.0321076757224033 Train acc: 0.5083348473837209 lr: 0.00001
+[2024-07-31 23:07:53,300] Starting validation epoch 84:
+[2024-07-31 23:07:53,568] ====> Epoch: 84 Time: 0.27 Val Loss: 2.019016625576241 Val acc: 0.5213859617248062
+[2024-07-31 23:07:53,568] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:07:53,569] Starting training epoch 85:
+[2024-07-31 23:07:55,234] ====> Epoch: 85 Time: 1.67 Train Loss: 2.0329243697861368 Train acc: 0.5074718386627907 lr: 0.00001
+[2024-07-31 23:07:55,235] Starting validation epoch 85:
+[2024-07-31 23:07:55,506] ====> Epoch: 85 Time: 0.27 Val Loss: 2.018788604888805 Val acc: 0.5215903585271318
+[2024-07-31 23:07:55,506] Validation loss decreased (2.018873 --> 2.018789).
+[2024-07-31 23:07:55,506] Starting training epoch 86:
+[2024-07-31 23:07:57,186] ====> Epoch: 86 Time: 1.68 Train Loss: 2.031886901042258 Train acc: 0.5084862524224806 lr: 0.00001
+[2024-07-31 23:07:57,186] Starting validation epoch 86:
+[2024-07-31 23:07:57,451] ====> Epoch: 86 Time: 0.26 Val Loss: 2.018891926768214 Val acc: 0.5209468871124031
+[2024-07-31 23:07:57,451] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:07:57,451] Starting training epoch 87:
+[2024-07-31 23:07:59,123] ====> Epoch: 87 Time: 1.67 Train Loss: 2.031665268447972 Train acc: 0.5090237403100775 lr: 0.00001
+[2024-07-31 23:07:59,123] Starting validation epoch 87:
+[2024-07-31 23:07:59,392] ====> Epoch: 87 Time: 0.27 Val Loss: 2.0190292465132336 Val acc: 0.5212118459302325
+[2024-07-31 23:07:59,393] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:07:59,393] Starting training epoch 88:
+[2024-07-31 23:08:01,073] ====> Epoch: 88 Time: 1.68 Train Loss: 2.032485680640206 Train acc: 0.5079109132751938 lr: 0.00001
+[2024-07-31 23:08:01,073] Starting validation epoch 88:
+[2024-07-31 23:08:01,339] ====> Epoch: 88 Time: 0.27 Val Loss: 2.0192016054724538 Val acc: 0.5207046390503877
+[2024-07-31 23:08:01,339] EarlyStopping counter: 3 out of 10
+[2024-07-31 23:08:01,339] Starting training epoch 89:
+[2024-07-31 23:08:03,007] ====> Epoch: 89 Time: 1.67 Train Loss: 2.0321804673172705 Train acc: 0.5091827156007752 lr: 0.00001
+[2024-07-31 23:08:03,007] Starting validation epoch 89:
+[2024-07-31 23:08:03,281] ====> Epoch: 89 Time: 0.27 Val Loss: 2.018781082228173 Val acc: 0.5213783914728682
+[2024-07-31 23:08:03,281] Validation loss decreased (2.018789 --> 2.018781).
+[2024-07-31 23:08:03,282] Starting training epoch 90:
+[2024-07-31 23:08:04,953] ====> Epoch: 90 Time: 1.67 Train Loss: 2.032296051350675 Train acc: 0.5084029796511628 lr: 0.00001
+[2024-07-31 23:08:04,954] Starting validation epoch 90:
+[2024-07-31 23:08:05,224] ====> Epoch: 90 Time: 0.27 Val Loss: 2.018798088958097 Val acc: 0.5213481104651163
+[2024-07-31 23:08:05,224] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:08:05,224] Starting training epoch 91:
+[2024-07-31 23:08:06,911] ====> Epoch: 91 Time: 1.69 Train Loss: 2.032074574005696 Train acc: 0.5081153100775194 lr: 0.00001
+[2024-07-31 23:08:06,911] Starting validation epoch 91:
+[2024-07-31 23:08:07,179] ====> Epoch: 91 Time: 0.27 Val Loss: 2.018994925673618 Val acc: 0.5207879118217054
+[2024-07-31 23:08:07,179] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:08:07,180] Starting training epoch 92:
+[2024-07-31 23:08:08,844] ====> Epoch: 92 Time: 1.66 Train Loss: 2.032233639627464 Train acc: 0.5086527979651163 lr: 0.00001
+[2024-07-31 23:08:08,844] Starting validation epoch 92:
+[2024-07-31 23:08:09,108] ====> Epoch: 92 Time: 0.26 Val Loss: 2.018872743082601 Val acc: 0.5210982921511628
+[2024-07-31 23:08:09,109] EarlyStopping counter: 3 out of 10
+[2024-07-31 23:08:09,109] Starting training epoch 93:
+[2024-07-31 23:08:10,774] ====> Epoch: 93 Time: 1.67 Train Loss: 2.032479070993357 Train acc: 0.5085695251937985 lr: 0.00000
+[2024-07-31 23:08:10,774] Starting validation epoch 93:
+[2024-07-31 23:08:11,050] ====> Epoch: 93 Time: 0.28 Val Loss: 2.018882744534071 Val acc: 0.5213405402131783
+[2024-07-31 23:08:11,050] EarlyStopping counter: 4 out of 10
+[2024-07-31 23:08:11,051] Starting training epoch 94:
+[2024-07-31 23:08:12,737] ====> Epoch: 94 Time: 1.69 Train Loss: 2.03165333157824 Train acc: 0.5093265503875969 lr: 0.00000
+[2024-07-31 23:08:12,738] Starting validation epoch 94:
+[2024-07-31 23:08:13,004] ====> Epoch: 94 Time: 0.27 Val Loss: 2.0189394954332087 Val acc: 0.521507085755814
+[2024-07-31 23:08:13,004] EarlyStopping counter: 5 out of 10
+[2024-07-31 23:08:13,005] Starting training epoch 95:
+[2024-07-31 23:08:14,681] ====> Epoch: 95 Time: 1.68 Train Loss: 2.031638122575228 Train acc: 0.5091448643410853 lr: 0.00000
+[2024-07-31 23:08:14,681] Starting validation epoch 95:
+[2024-07-31 23:08:14,950] ====> Epoch: 95 Time: 0.27 Val Loss: 2.0187626699375554 Val acc: 0.5216660610465116
+[2024-07-31 23:08:14,951] Validation loss decreased (2.018781 --> 2.018763).
+[2024-07-31 23:08:14,952] Starting training epoch 96:
+[2024-07-31 23:08:16,630] ====> Epoch: 96 Time: 1.68 Train Loss: 2.031364528245704 Train acc: 0.5091978561046512 lr: 0.00000
+[2024-07-31 23:08:16,630] Starting validation epoch 96:
+[2024-07-31 23:08:16,900] ====> Epoch: 96 Time: 0.27 Val Loss: 2.0187088143686918 Val acc: 0.5217493338178295
+[2024-07-31 23:08:16,901] Validation loss decreased (2.018763 --> 2.018709).
+[2024-07-31 23:08:16,901] Starting training epoch 97:
+[2024-07-31 23:08:18,564] ====> Epoch: 97 Time: 1.66 Train Loss: 2.0322418993757676 Train acc: 0.5084559714147286 lr: 0.00000
+[2024-07-31 23:08:18,564] Starting validation epoch 97:
+[2024-07-31 23:08:18,835] ====> Epoch: 97 Time: 0.27 Val Loss: 2.01882343028867 Val acc: 0.521469234496124
+[2024-07-31 23:08:18,835] EarlyStopping counter: 1 out of 10
+[2024-07-31 23:08:18,835] Starting training epoch 98:
+[2024-07-31 23:08:20,513] ====> Epoch: 98 Time: 1.68 Train Loss: 2.0317517075427745 Train acc: 0.5086830789728682 lr: 0.00000
+[2024-07-31 23:08:20,513] Starting validation epoch 98:
+[2024-07-31 23:08:20,784] ====> Epoch: 98 Time: 0.27 Val Loss: 2.018771392661472 Val acc: 0.5215373667635659
+[2024-07-31 23:08:20,784] EarlyStopping counter: 2 out of 10
+[2024-07-31 23:08:20,784] Starting training epoch 99:
+[2024-07-31 23:08:22,447] ====> Epoch: 99 Time: 1.66 Train Loss: 2.031950038763904 Train acc: 0.5083424176356589 lr: 0.00000
+[2024-07-31 23:08:22,447] Starting validation epoch 99:
+[2024-07-31 23:08:22,715] ====> Epoch: 99 Time: 0.27 Val Loss: 2.0188470590253207 Val acc: 0.5213859617248062
+[2024-07-31 23:08:22,715] EarlyStopping counter: 3 out of 10
+[2024-07-31 23:08:23,516] overall accuracy is: 0.5192954545454546
+[2024-07-31 23:08:23,516] macro F1-score is: 0.5279848806261773
+[2024-07-31 23:08:23,516] kappa coefficient is: 0.471225
