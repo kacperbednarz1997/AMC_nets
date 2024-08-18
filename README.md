@@ -51,7 +51,8 @@ Please extract the downloaded compressed file to the ./datasets folder and keep 
 ```
 
 ## Pretrained models
-Pretrained models are located in the ./checkpoints folder.
+Pretrained models are located in the ./checkpoints folder. 
+There is no checkpoint for the LSTM model due to the file size being too large.
 
 ## Environment Setup
 - Python == 3.12.3
