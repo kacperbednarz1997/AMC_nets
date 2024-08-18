@@ -8,31 +8,31 @@ The models were implemented in the PyTorch library and were taken from the liter
 
 1) CNN [1]
 
-![](../assets/CNN_architektura.png)
+![](/assets/CNN_architektura.png)
 
 2) RNN [2]
 
-![](../assets/RNN_architektura.png)
+![](/assets/RNN_architektura.png)
 
 3) LSTM [2]
 
-![](../assets/LSTM_architektura.png)
+![](/assets/LSTM_architektura.png)
 
 4) CLDNN [1]
 
-![](../assets/CLDNN_architektura.png)
+![](/assets/CLDNN_architektura.png)
 
 5) CGDNN [1]
 
-![](../assets/CGDNN_architektura.png)
+![](/assets/CGDNN_architektura.png)
 
 6) ResNet [3]
 
-![](../assets/ResNet_architektura.png)
+![](/assets/ResNet_architektura.png)
 
 7) AWN [4]
 
-![](../assets/AWN_architektura.png)
+![](/assets/AWN_architektura.png)
 
 # Preparation
 ## Datasets
@@ -57,7 +57,8 @@ Please extract the downloaded compressed file to the ./datasets folder and keep 
 ```
 
 ## Pretrained models
-Pretrained models are located in the ./checkpoints folder.
+Pretrained models are located in the ./checkpoints folder. 
+There is no checkpoint for the LSTM model due to the file size being too large.
 
 ## Environment Setup
 - Python == 3.12.3
