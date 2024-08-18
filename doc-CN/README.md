@@ -30,7 +30,7 @@ The models were implemented in the PyTorch library and were taken from the liter
 
 ![](../assets/ResNet_architektura.png)
 
-7) AWN [39][40]
+7) AWN [4]
 
 ![](../assets/AWN_architektura.png)
 
