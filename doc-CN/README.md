@@ -5,24 +5,31 @@ Kacper Bednarz
 # Models
 Code containing various models for automatic modulation classification (AMC).
 The models were implemented in the PyTorch library and were taken from the literature:
+
 1) CNN [1]
 
 ![](../assets/CNN_architektura.png)
+
 2) RNN [2]
 
 ![](../assets/RNN_architektura.png)
+
 3) LSTM [2]
 
 ![](../assets/LSTM_architektura.png)
+
 4) CLDNN [1]
 
 ![](../assets/CLDNN_architektura.png)
+
 5) CGDNN [1]
 
 ![](../assets/CGDNN_architektura.png)
+
 6) ResNet [3]
 
 ![](../assets/ResNet_architektura.png)
+
 7) AWN [39][40]
 
 ![](../assets/AWN_architektura.png)
