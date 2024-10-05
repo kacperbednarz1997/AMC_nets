@@ -97,4 +97,4 @@ This code is distributed under an [MIT LICENSE](https://github.com/kacperbednarz
 
 [4] J. Zhang, T. Wang, Z. Feng, i S. Yang, „Toward the Automatic Modulation Classification With Adaptive Wavelet Network”, IEEE Transactions on Cognitive Communications and Networking, t. 9, nr 3, s. 549–563, cze. 2023, doi: 10.1109/TCCN.2023.3252580
 
-[5] K. Bednarz, "Analiza porównawcza wybranych modeli AMC wytrenowanych na ogólnodostępnych zbiorach danych", September 2024, DOI: 10.13140/RG.2.2.36405.08163, available online: [link to work](https://www.researchgate.net/publication/384660524_Analiza_porownawcza_wybranych_modeli_AMC_wytrenowanych_na_ogolnodostepnych_zbiorach_danych)].
+[5] K. Bednarz, "Analiza porównawcza wybranych modeli AMC wytrenowanych na ogólnodostępnych zbiorach danych", September 2024, DOI: 10.13140/RG.2.2.36405.08163, available online: [[link to work](https://www.researchgate.net/publication/384660524_Analiza_porownawcza_wybranych_modeli_AMC_wytrenowanych_na_ogolnodostepnych_zbiorach_danych)].
